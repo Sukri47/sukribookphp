@@ -118,7 +118,10 @@
         document.querySelector(".fantasi").style.display = "block";
       }
       function semua() {
-        document.querySelector(".fiksi").style.display = "block";
+        const nodeList = document.querySelectorAll(".fiksi");
+        for (i = 0; i < nodeList.length; i++) {
+          nodeList[i].style.display = "none";
+        }
         document.querySelector(".noFiksi").style.display = "block";
         document.querySelector(".fantasi").style.display = "block";
       }
