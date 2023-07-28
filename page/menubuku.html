@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SUKRIBOOK - Perpustakaan Buku</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/201/201614.png?w=740&t=st=1690524988~exp=1690525588~hmac=aeb754baa84f0ba37dbb21c606b188976b50ec929750afdc8214d52600411c16" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Josefin+Sans:wght@700&family=Lexend+Deca:wght@300&family=Oswald:wght@500&family=Rubik:wght@500&family=Tilt+Warp&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="../css/menubuku.css" />
+    <link rel="stylesheet" href="../css/font.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-success shadow fixed-top" data-bs-theme="dark">
+      <div class="container">
+        <a class="navbar-brand fs-3 fw-bold font-bagel brand-text" href="#"> SUKRIBOOK </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active fw-semibold me-1" aria-current="page" href="landingPage.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active btn btn-danger fw-semibold me-1" href="menubuku.html">Book</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active fw-semibold" href="#">Account</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- header -->
+    <header class="header turun">
+      <div class="hero">
+        <h4 class="fontheader fw-bold text-light">Jangan Lupa <br />Membaca <span>Buku</span></h4>
+      </div>
+    </header>
+    <!-- content -->
+    <main>
+      <!-- sortir -->
+      <div class="sortir">
+        <p class="d-inline">Sortir : <span class="text-black">Kategori</span></p>
+        <div class="btn-group" role="group" aria-label="Basic outlined example">
+          <button type="button" class="btn btn-outline-primary" onclick="fiksi()">Fiksi</button>
+          <button type="button" class="btn btn-outline-primary" onclick="nonfiksi()">Non-Fiksi</button>
+          <button type="button" class="btn btn-outline-primary" onclick="fantasi()">Fantasy</button>
+          <button type="button" class="btn btn-outline-primary" onclick="semua()">Semua</button>
+        </div>
+      </div>
+
+      <!-- buku -->
+      <div class="buku-container d-flex justify-content-evenly flex-wrap">
+        <div class="card fiksi" style="width: 15rem">
+          <img src="..." class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Fiksi</a>
+          </div>
+        </div>
+        <div class="card fiksi" style="width: 15rem">
+          <img src="..." class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Fiksi</a>
+          </div>
+        </div>
+        <div class="card noFiksi" style="width: 15rem">
+          <img src="..." class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Non Fiksi</a>
+          </div>
+        </div>
+        <div class="card fantasi" style="width: 15rem">
+          <img src="..." class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Fantasy</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script>
+      function fiksi() {
+        const nodeList = document.querySelectorAll(".fiksi");
+        for (i = 0; i < nodeList.length; i++) {
+          nodeList[i].style.display = "block";
+        }
+        document.querySelector(".noFiksi").style.display = "none";
+        document.querySelector(".fantasi").style.display = "none";
+      }
+      function nonfiksi() {
+        const nodeList = document.querySelectorAll(".fiksi");
+        for (i = 0; i < nodeList.length; i++) {
+          nodeList[i].style.display = "none";
+        }
+        document.querySelector(".noFiksi").style.display = "block";
+        document.querySelector(".fantasi").style.display = "none";
+      }
+      function fantasi() {
+        const nodeList = document.querySelectorAll(".fiksi");
+        for (i = 0; i < nodeList.length; i++) {
+          nodeList[i].style.display = "none";
+        }
+        document.querySelector(".noFiksi").style.display = "none";
+        document.querySelector(".fantasi").style.display = "block";
+      }
+      function semua() {
+        document.querySelector(".fiksi").style.display = "block";
+        document.querySelector(".noFiksi").style.display = "block";
+        document.querySelector(".fantasi").style.display = "block";
+      }
+    </script>
+  </body>
+</html>

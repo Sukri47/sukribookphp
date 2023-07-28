@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.bg-success {
+  background-color: rgb(175, 144, 5) !important;
+}
+.turun {
+  margin-top: 3.6em;
+}
+/* brand */
+.brand-text {
+  letter-spacing: 0.1em;
+  color: rgb(243, 234, 196);
+}
+/* header */
+.header {
+  display: grid;
+  grid-template-areas: "hero";
+}
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  grid-area: hero;
+  min-height: 350px;
+  background-image: url(https://img.freepik.com/free-photo/book-library-with-open-textbook_1150-5920.jpg?w=740&t=st=1690430473~exp=1690431073~hmac=611de3437c43cecebc742c2301eea388b2206f9d02e3beace8afc6c4f79821c5);
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 1) 95%, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  mask-image: linear-gradient(rgba(0, 0, 0, 1) 95%, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+span {
+  color: rgb(236, 236, 118);
+  text-shadow: 0 0 7px rgba(255, 255, 255, 0.3), 0 0 3px rgba(255, 255, 255, 0.3);
+}
+
+.fontheader {
+  font-size: 10vh;
+  margin-left: 0.7em;
+  text-shadow: 0 0 7px rgba(255, 255, 255, 0.3), 0 0 3px rgba(255, 255, 255, 0.3);
+}
+.imgwidth {
+  width: 20em;
+}
+/* content */
+.sortir {
+  padding: 1em;
+  border-bottom: 1px solid black;
+}
