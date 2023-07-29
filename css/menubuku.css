@@ -8,6 +8,9 @@
 .turun {
   margin-top: 3.6em;
 }
+.card-width {
+  width: 15rem;
+}
 /* brand */
 .brand-text {
   letter-spacing: 0.1em;
@@ -48,9 +51,50 @@ span {
   padding: 1em;
   border-bottom: 1px solid black;
 }
-
+/* footer */
+.footer {
+  display: grid;
+  grid-template-areas: "f-left f-right";
+  grid-template-columns: 1fr 1fr;
+  gap: 5em;
+  padding: 2em 2em 1em 2em;
+}
+.footer h5 {
+  font-size: 1.5em;
+}
+.footer-left > p {
+  font-size: 1em;
+}
+.footer > * {
+  color: white;
+}
+.footer-left {
+  grid-area: f-left;
+}
+.footer-right {
+  grid-area: f-right;
+}
+.footer-right > a {
+  padding: 0.5em 2.2em 0.5em 2em;
+  font-weight: bold;
+  margin-right: 1rem;
+}
+.footer-left > .icon {
+  display: flex;
+}
+.icon img {
+  margin-right: 1em;
+  width: 1rem;
+}
+.btn-danger img,
+.btn-success img {
+  width: 1.3rem;
+  margin-bottom: 0.2rem;
+  margin-right: 1rem;
+}
 /* resposive breakpoint */
 @media (max-width: 992px) {
+  /* header */
   .fontheader {
     font-size: 5vh;
     margin-left: 0.3em;
@@ -59,14 +103,37 @@ span {
     margin-bottom: 0.6em;
     width: 10em;
   }
+  /* content */
+  .card-width {
+    width: 18rem;
+  }
 }
 
 @media (max-width: 767px) {
+  /* header */
   .hero {
     max-height: 150px;
   }
   .fontheader {
     font-size: 3vh;
     margin-left: 0.3em;
+  }
+  /* content */
+  .card-width {
+    width: 11rem;
+  }
+  /* footer */
+  .footer {
+    display: grid;
+    grid-template-areas: "f-left" "f-right";
+    grid-template-columns: 1fr;
+    gap: 1em;
+    padding: 2em;
+  }
+  .footer-left {
+    margin-bottom: 1em;
+  }
+  .footer-left > p {
+    margin: 0;
   }
 }
