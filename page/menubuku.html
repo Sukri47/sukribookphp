@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>SUKRIBOOK - Perpustakaan Buku</title>
     <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/201/201614.png?w=740&t=st=1690524988~exp=1690525588~hmac=aeb754baa84f0ba37dbb21c606b188976b50ec929750afdc8214d52600411c16" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Josefin+Sans:wght@700&family=Lexend+Deca:wght@300&family=Oswald:wght@500&family=Rubik:wght@500&family=Tilt+Warp&display=swap" rel="stylesheet" />
@@ -23,13 +24,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active fw-semibold me-1" aria-current="page" href="landingPage.html">Home</a>
+              <a class="nav-link fw-semibold me-1" aria-current="page" href="landingPage.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active btn btn-danger fw-semibold me-1" href="menubuku.html">Book</a>
+              <a class="nav-link active fw-semibold me-1" href="menubuku.html">Book</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active fw-semibold" href="#">Account</a>
+              <a class="nav-link fw-semibold" href="#">Account</a>
             </li>
           </ul>
         </div>
@@ -44,48 +45,56 @@
     <!-- content -->
     <main>
       <!-- sortir -->
-      <div class="sortir">
-        <p class="d-inline">Sortir : <span class="text-black">Kategori</span></p>
+      <div class="sortir d-flex justify-content-center flex-wrap">
+        <h3 class="d-inline text-black me-3 uppercase">Kategori :</h3>
         <div class="btn-group" role="group" aria-label="Basic outlined example">
-          <button type="button" class="btn btn-outline-primary" onclick="fiksi()">Fiksi</button>
-          <button type="button" class="btn btn-outline-primary" onclick="nonfiksi()">Non-Fiksi</button>
-          <button type="button" class="btn btn-outline-primary" onclick="fantasi()">Fantasy</button>
-          <button type="button" class="btn btn-outline-primary" onclick="semua()">Semua</button>
+          <button type="button" class="btn btn-outline-primary" onclick="filterBuku(['fiksi'])">Fiksi</button>
+          <button type="button" class="btn btn-outline-primary" onclick="filterBuku(['nofiksi'])">Non-Fiksi</button>
+          <button type="button" class="btn btn-outline-primary" onclick="filterBuku(['fantasi'])">Fantasy</button>
+          <button type="button" class="btn btn-outline-primary" onclick="filterBuku(['semua'])">Semua</button>
         </div>
       </div>
 
       <!-- buku -->
-      <div class="buku-container d-flex justify-content-evenly flex-wrap">
-        <div class="card fiksi" style="width: 15rem">
-          <img src="..." class="card-img-top" alt="..." />
+      <div class="buku-container d-flex justify-content-evenly flex-wrap mt-4">
+        <div class="card buku fiksi mb-3" style="width: 15rem">
+          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/23/Where_the_Crawdads_Sing_%28film%29.jpg/220px-Where_the_Crawdads_Sing_%28film%29.jpg" class="card-img-top" alt="foto buku where the crawdads sing" />
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Fiksi</a>
+            <h5 class="card-title">Where the Crawdads Sing</h5>
+            <p class="card-text font-size-card">
+              "Where the Crawdads Sing" adalah tentang Kya Clark, seorang gadis muda yang tinggal di rawa-rawa terpencil. Dia menghadapi perjuangan hidup, dan ketika seorang pria ditemukan mati di rawa-rawa...
+            </p>
+            <!-- <a href="#" class="btn btn-primary px-4 fw-semibold">Buy</a> -->
+            <span class="material-symbols-outlined badge bg-warning">star <span class="fontrubik text-light">4.9</span></span>
+            <span class="badge bg-secondary">Fiksi</span>
+            <span class="badge bg-secondary">17+</span>
           </div>
         </div>
-        <div class="card fiksi" style="width: 15rem">
-          <img src="..." class="card-img-top" alt="..." />
+        <div class="card buku fiksi mb-3" style="width: 15rem">
+          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/df/The_Silent_Patient_early_2019_UK_edition.png/220px-The_Silent_Patient_early_2019_UK_edition.png" class="card-img-top" alt="the silent patient" />
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Fiksi</a>
+            <h5 class="card-title">The Silent Patient</h5>
+            <p class="card-text font-size-card">
+              "The Silent Patient" adalah kisah tentang seorang pelukis bernama Alicia Berenson yang berhenti berbicara setelah membunuh suaminya. Seorang psikoterapis, Theo Faber, berusaha membantu mengungkap...
+            </p>
+            <a href="#" class="btn btn-primary px-4 fw-semibold">Buy</a>
+            <span class="badge bg-secondary ms-2">Fiksi</span>
           </div>
         </div>
-        <div class="card noFiksi" style="width: 15rem">
+        <div class="card buku nofiksi mb-3" style="width: 15rem">
           <img src="..." class="card-img-top" alt="..." />
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Non Fiksi</a>
+            <a href="#" class="btn btn-primary">Buy</a>
           </div>
         </div>
-        <div class="card fantasi" style="width: 15rem">
+        <div class="card buku fantasi mb-3" style="width: 15rem">
           <img src="..." class="card-img-top" alt="..." />
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Fantasy</a>
+            <a href="#" class="btn btn-primary">Buy</a>
           </div>
         </div>
       </div>
@@ -93,37 +102,15 @@
     <!-- script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script>
-      function fiksi() {
-        const nodeList = document.querySelectorAll(".fiksi");
-        for (i = 0; i < nodeList.length; i++) {
-          nodeList[i].style.display = "block";
-        }
-        document.querySelector(".noFiksi").style.display = "none";
-        document.querySelector(".fantasi").style.display = "none";
-      }
-      function nonfiksi() {
-        const nodeList = document.querySelectorAll(".fiksi");
-        for (i = 0; i < nodeList.length; i++) {
-          nodeList[i].style.display = "none";
-        }
-        document.querySelector(".noFiksi").style.display = "block";
-        document.querySelector(".fantasi").style.display = "none";
-      }
-      function fantasi() {
-        const nodeList = document.querySelectorAll(".fiksi");
-        for (i = 0; i < nodeList.length; i++) {
-          nodeList[i].style.display = "none";
-        }
-        document.querySelector(".noFiksi").style.display = "none";
-        document.querySelector(".fantasi").style.display = "block";
-      }
-      function semua() {
-        const nodeList = document.querySelectorAll(".fiksi");
-        for (i = 0; i < nodeList.length; i++) {
-          nodeList[i].style.display = "none";
-        }
-        document.querySelector(".noFiksi").style.display = "block";
-        document.querySelector(".fantasi").style.display = "block";
+      function filterBuku(kategori) {
+        const allBuku = document.querySelectorAll(".buku");
+        allBuku.forEach((buku) => {
+          if (kategori.includes("semua") || kategori.some((item) => buku.classList.contains(item))) {
+            buku.style.display = "block";
+          } else {
+            buku.style.display = "none";
+          }
+        });
       }
     </script>
   </body>

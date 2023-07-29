@@ -17,3 +17,15 @@
 .font-bagel {
   font-family: "Bagel Fat One", cursive;
 }
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+/* text transform */
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* fontsize */
+.font-size-card {
+  font-size: 0.8rem;
+}

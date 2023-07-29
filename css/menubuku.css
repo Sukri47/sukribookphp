@@ -48,3 +48,25 @@ span {
   padding: 1em;
   border-bottom: 1px solid black;
 }
+
+/* resposive breakpoint */
+@media (max-width: 992px) {
+  .fontheader {
+    font-size: 5vh;
+    margin-left: 0.3em;
+  }
+  .imgwidth {
+    margin-bottom: 0.6em;
+    width: 10em;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero {
+    max-height: 150px;
+  }
+  .fontheader {
+    font-size: 3vh;
+    margin-left: 0.3em;
+  }
+}
