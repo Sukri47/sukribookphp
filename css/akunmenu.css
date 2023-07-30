@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.bg-success {
+  background-color: rgb(175, 144, 5) !important;
+}
+.turun {
+  margin-top: 4em;
+}
+.card-width {
+  width: 15rem;
+}
+/* brand */
+.brand-text {
+  letter-spacing: 0.1em;
+  color: rgb(243, 234, 196);
+}
+/* header */
+.header {
+  display: grid;
+  grid-template-areas: "hero";
+}
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  grid-area: hero;
+  min-height: 350px;
+  background-image: url(https://img.freepik.com/free-photo/book-library-with-open-textbook_1150-5920.jpg?w=740&t=st=1690430473~exp=1690431073~hmac=611de3437c43cecebc742c2301eea388b2206f9d02e3beace8afc6c4f79821c5);
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 1) 95%, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  mask-image: linear-gradient(rgba(0, 0, 0, 1) 95%, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+span {
+  color: rgb(236, 236, 118);
+  text-shadow: 0 0 7px rgba(255, 255, 255, 0.3), 0 0 3px rgba(255, 255, 255, 0.3);
+}
+
+.fontheader {
+  font-size: 10vh;
+  margin-left: 0.7em;
+  text-shadow: 0 0 7px rgba(255, 255, 255, 0.3), 0 0 3px rgba(255, 255, 255, 0.3);
+}
+.imgwidth {
+  width: 20em;
+}
+/* content */
+/* profile */
+.profile {
+  padding: 2rem 2rem 2rem 6rem;
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "foto-profile nama-profile"
+    "foto-profile nama-akun-profile"
+    "foto-profile edit-profile";
+
+  background-image: url(https://img.freepik.com/free-photo/book-library-with-open-textbook_1150-5920.jpg?w=740&t=st=1690430473~exp=1690431073~hmac=611de3437c43cecebc742c2301eea388b2206f9d02e3beace8afc6c4f79821c5);
+  background-size: cover;
+  background-position: center;
+  -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 1) 95%, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  mask-image: linear-gradient(rgba(0, 0, 0, 1) 95%, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+.foto-profile {
+  grid-area: foto-profile;
+  margin-right: 1rem;
+}
+.nama-profile {
+  grid-area: nama-profile;
+  align-self: end;
+}
+.akun-name-profile {
+  grid-area: nama-akun-profile;
+  align-self: start;
+}
+.edit-profile {
+  grid-area: edit-profile;
+}
+.edit-profile button,
+.main-content button {
+  font-size: 0.8rem;
+}
+.foto-profile img {
+  width: 100%;
+  border-radius: 50%;
+  border: 2px solid red;
+}
+/* main content */
+.main-content img {
+  width: 4rem;
+}
+/* footer */
+.footer {
+  display: grid;
+  grid-template-areas: "f-left f-right";
+  grid-template-columns: 1fr 1fr;
+  gap: 5em;
+  padding: 2em 2em 1em 2em;
+}
+.footer h5 {
+  font-size: 1.5em;
+}
+.footer-left > p {
+  font-size: 1em;
+}
+.footer > * {
+  color: white;
+}
+.footer-left {
+  grid-area: f-left;
+}
+.footer-right {
+  grid-area: f-right;
+}
+.footer-right > a {
+  padding: 0.5em 2.2em 0.5em 2em;
+  font-weight: bold;
+  margin-right: 1rem;
+}
+.footer-left > .icon {
+  display: flex;
+}
+.icon img {
+  margin-right: 1em;
+  width: 1rem;
+}
+.btn-danger img,
+.btn-success img {
+  width: 1.3rem;
+  margin-bottom: 0.2rem;
+  margin-right: 1rem;
+}
+
+/* resposive breakpoint */
+@media (max-width: 992px) {
+  /* header */
+  .fontheader {
+    font-size: 5vh;
+    margin-left: 0.3em;
+  }
+  .imgwidth {
+    margin-bottom: 0.6em;
+    width: 10em;
+  }
+}
+@media (max-width: 767px) {
+  /* header */
+  .hero {
+    max-height: 150px;
+  }
+  .fontheader {
+    font-size: 3vh;
+    margin-left: 0.3em;
+  }
+  /* profile */
+  .profile {
+    padding: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 1fr 1fr 2fr;
+    grid-template-areas:
+      "foto-profile"
+      " nama-profile"
+      "nama-akun-profile"
+      "edit-profile";
+    text-align: center;
+  }
+  .profile img {
+    width: 40%;
+    align-content: end;
+  }
+  .turun {
+    margin-top: 3.7em;
+  }
+  /* footer */
+  .footer {
+    display: grid;
+    grid-template-areas: "f-left" "f-right";
+    grid-template-columns: 1fr;
+    gap: 1em;
+    padding: 2em;
+  }
+  .footer-left {
+    margin-bottom: 1em;
+  }
+  .footer-left > p {
+    margin: 0;
+  }
+}
