@@ -171,6 +171,9 @@ span {
     width: 40%;
     align-content: end;
   }
+  .foto-profile {
+    margin-right: 0;
+  }
   .turun {
     margin-top: 3.7em;
   }
