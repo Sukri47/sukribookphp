@@ -49,44 +49,30 @@ span {
 /* content */
 /* profile */
 .profile {
-  padding: 2rem 2rem 2rem 6rem;
-  display: grid;
-  grid-template-columns: 1fr 9fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas:
-    "foto-profile nama-profile"
-    "foto-profile nama-akun-profile"
-    "foto-profile edit-profile";
-
+  display: flex;
+  padding: 2rem 0 2rem 4rem;
   background-image: url(https://img.freepik.com/free-photo/book-library-with-open-textbook_1150-5920.jpg?w=740&t=st=1690430473~exp=1690431073~hmac=611de3437c43cecebc742c2301eea388b2206f9d02e3beace8afc6c4f79821c5);
   background-size: cover;
   background-position: center;
   -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 1) 95%, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   mask-image: linear-gradient(rgba(0, 0, 0, 1) 95%, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
 }
-.foto-profile {
-  grid-area: foto-profile;
-  margin-right: 1rem;
-}
-.nama-profile {
-  grid-area: nama-profile;
-  align-self: end;
-}
-.akun-name-profile {
-  grid-area: nama-akun-profile;
-  align-self: start;
-}
-.edit-profile {
-  grid-area: edit-profile;
+.kanan-profile {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1.5rem;
 }
 .edit-profile button,
 .main-content button {
   font-size: 0.8rem;
 }
 .foto-profile img {
-  width: 100%;
+  width: 6rem;
   border-radius: 50%;
   border: 2px solid red;
+}
+.edit-profile {
+  margin-top: 0.6rem;
 }
 /* main content */
 .main-content img {
@@ -157,22 +143,16 @@ span {
   }
   /* profile */
   .profile {
-    padding: 1rem;
-    grid-template-columns: 1fr;
-    grid-template-rows: 3fr 1fr 1fr 2fr;
-    grid-template-areas:
-      "foto-profile"
-      " nama-profile"
-      "nama-akun-profile"
-      "edit-profile";
+    flex-direction: column;
     text-align: center;
+    padding: 2rem;
   }
-  .profile img {
-    width: 40%;
-    align-content: end;
+  .text-secondary {
+    color: rgb(245, 72, 19) !important;
   }
-  .foto-profile {
-    margin-right: 0;
+  .kanan-profile {
+    margin: 0;
+    padding: 0;
   }
   .turun {
     margin-top: 3.7em;
