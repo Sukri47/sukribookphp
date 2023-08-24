@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.bg-success {
+  background-color: rgb(175, 144, 5) !important;
+}
+.turun {
+  margin-top: 5em;
+}
+.naik {
+  margin-bottom: 0.5em;
+}

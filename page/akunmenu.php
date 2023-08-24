@@ -24,13 +24,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link fw-semibold me-1" aria-current="page" href="landingPage.html">Home</a>
+              <a class="nav-link fw-semibold me-1" aria-current="page" href="landingPage.php">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fw-semibold me-1" href="menubuku.html">Book</a>
+              <a class="nav-link fw-semibold me-1" href="menubuku.php">Book</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active fw-semibold" href="akunmenu.html">Account</a>
+              <a class="nav-link active fw-semibold" href="akunmenu.php">Account</a>
             </li>
           </ul>
         </div>
@@ -60,32 +60,32 @@
           <div class="col-12 font-josesif-sans fs-3 fw-semibold">Pesanan Anda ></div>
         </div>
         <div class="row justify-content-evenly column-gap-1 row-gap-4 text-center m-1">
-          <div class="col-md-3 border border-1 p-2 shadow fs-5 font-josesif-sans fw-semibold">
+          <div class="col-md-3 border border-1 p-3 shadow fs-5 font-josesif-sans fw-semibold">
             Belum Bayar <br />
             <img src="https://cdn-icons-png.flaticon.com/512/126/126230.png?w=740&t=st=1690708497~exp=1690709097~hmac=6a6250e25f7895ae1ac8647948743bb169eb26b248cc5f904b7f8e1b21e5c7be" alt="" class="my-2" /><br />
             <a href=""><button type="button" class="btn btn-primary fontrubik">View Order</button></a>
           </div>
-          <div class="col-md-3 border border-1 p-2 shadow fs-5 font-josesif-sans fw-semibold">
+          <div class="col-md-3 border border-1 p-3 shadow fs-5 font-josesif-sans fw-semibold">
             Dikemas <br />
             <img src="https://cdn-icons-png.flaticon.com/512/65/65998.png?w=740&t=st=1690708381~exp=1690708981~hmac=15373a66f6204edb8b3fb350b5bd88332d3f063b95b0faafbc600b8fc8d2a970" alt="" class="my-2" /><br />
             <a href=""><button type="button" class="btn btn-primary fontrubik">View Order</button></a>
           </div>
-          <div class="col-md-3 border border-1 p-2 shadow fs-5 font-josesif-sans fw-semibold">
+          <div class="col-md-3 border border-1 p-3 shadow fs-5 font-josesif-sans fw-semibold">
             Dikirim <br />
             <img src="https://cdn-icons-png.flaticon.com/512/709/709790.png?w=740&t=st=1690707443~exp=1690708043~hmac=6588f369f5bc82ead0ce87165676e5399b5dd506104f15961917775950e10b27" alt="" class="my-2" /><br />
             <a href=""><button type="button" class="btn btn-primary fontrubik">View Order</button></a>
           </div>
-          <div class="col-md-3 border border-1 p-2 shadow fs-5 font-josesif-sans fw-semibold">
+          <div class="col-md-3 border border-1 p-3 shadow fs-5 font-josesif-sans fw-semibold">
             Beri Penilaian <br />
             <img src="https://cdn-icons-png.flaticon.com/512/1239/1239383.png?w=740&t=st=1690708613~exp=1690709213~hmac=d62cb097a240eac2f9b958ce5e49da5b1292badf09f64333db871f061135237d" alt="" class="my-2" /><br />
             <a href=""><button type="button" class="btn btn-primary fontrubik">View Order</button></a>
           </div>
-          <div class="col-md-3 border border-1 p-2 shadow fs-5 font-josesif-sans fw-semibold">
+          <div class="col-md-3 border border-1 p-3 shadow fs-5 font-josesif-sans fw-semibold">
             Dibatalkan <br />
             <img src="https://cdn-icons-png.flaticon.com/512/1250/1250573.png?w=740&t=st=1690708652~exp=1690709252~hmac=64e3fd8e832d4fc5f3d88adaa3f7f8e332f234c81e079e67cdcd780196b39c46" alt="" class="my-2" /><br />
             <a href=""><button type="button" class="btn btn-primary fontrubik">View Order</button></a>
           </div>
-          <div class="col-md-3 border border-1 p-2 shadow fs-5 font-josesif-sans fw-semibold">
+          <div class="col-md-3 border border-1 p-3 shadow fs-5 font-josesif-sans fw-semibold">
             Pengembalian <br />
             <img src="https://cdn-icons-png.flaticon.com/512/631/631200.png?w=740&t=st=1690708684~exp=1690709284~hmac=18d0163b05184d8cfa5a384e6799d92f049e434281acf952da4afb8f80c52319" alt="" class="my-2" /><br />
             <a href=""><button type="button" class="btn btn-primary fontrubik">View Order</button></a>
