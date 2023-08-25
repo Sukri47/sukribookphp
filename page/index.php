@@ -80,7 +80,7 @@
               <div class="accordion-body">
                 <ul class="list-group">
                   <li class="list-group-item d-flex justify-content-between align-items-center">
-                    Tambah Buku Fisik
+                    <a href="tambah/TambahBukuFisik.php">Tambah Buku Fisik</a>
                     <span class="badge bg-primary rounded-pill">+</span>
                   </li>
                   <li class="list-group-item d-flex justify-content-between align-items-center">

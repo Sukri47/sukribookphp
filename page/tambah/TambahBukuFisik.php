@@ -24,10 +24,10 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link fw-semibold me-1" aria-current="page" href="../../page/landingPage.php">Home</a>
+              <a class="nav-link fw-semibold me-1" aria-current="page" href="../../page/index.php">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active fw-semibold me-1" href="../../page/menubuku.php">Book</a>
+              <a class="nav-link fw-semibold me-1" href="../../page/menubuku.php">Book</a>
             </li>
             <li class="nav-item">
               <a class="nav-link fw-semibold" href="../../page/akunmenu.php">Account</a>
@@ -37,8 +37,17 @@
       </div>
     </nav>
 
-    <!-- form -->
+    <!-- breadcrumb -->
     <div class="container turun">
+      <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Tambah Buku</li>
+        </ol>
+      </nav>
+    </div>
+    <!-- form -->
+    <div class="container">
       <h2 class="fw-bold fontrubik text-center mb-4">TAMBAH BUKU</h2>
       <div class="row justify-content-center">
         <div class="col-md-6">
@@ -58,6 +67,15 @@
                 <option value="Fiksi">Fiksi</option>
                 <option value="Non-Fiksi">Non-Fiksi</option>
                 <option value="Fantasi">Fantasi</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label class="fw-semibold naik">Batas Umur</label>
+              <select class="form-select" aria-label="Default select example" name="batasUmur">
+                <option selected>Pilih Batas Umur</option>
+                <option value="SU">Semua Umur</option>
+                <option value="R13+">Remaja</option>
+                <option value="17+">Dewasa</option>
               </select>
             </div>
             <div class="mb-3">

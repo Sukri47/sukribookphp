@@ -24,7 +24,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link fw-semibold me-1" aria-current="page" href="landingPage.php">Home</a>
+              <a class="nav-link fw-semibold me-1" aria-current="page" href="index.php">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link fw-semibold me-1" href="menubuku.php">Book</a>
